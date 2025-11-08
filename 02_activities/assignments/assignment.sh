@@ -54,6 +54,10 @@ cp *event* ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/proces
 rm *ipaddr* 
 cd ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/user_logs
 rm *ipaddr*
+cd ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/event_logs 
+rm *ipaddr*
+cd ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/server_logs
+rm *ipaddr*
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 cd ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/
