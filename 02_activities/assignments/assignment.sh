@@ -52,12 +52,12 @@ cp *event* ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/proces
 
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 rm *ipaddr* 
-cd data/processed/user_logs
+cd ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/user_logs
 rm *ipaddr*
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 cd ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/
-ls processed > invtentory.txt
+ls processed > inventory.txt
 
 ###########################################
 
