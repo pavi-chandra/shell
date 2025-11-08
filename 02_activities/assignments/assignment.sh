@@ -43,8 +43,7 @@ mkdir processed/server_logs processed/user_logs processed/event_logs
 
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
 cd ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/raw
-cp *server* ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/server_logs
-cp *.log ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/server_logs
+cp *server*.log ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/server_logs
 
 # 6. Repeat the above step for user logs and event logs
 cp *user* ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/user_logs
