@@ -37,17 +37,18 @@ mv rawdata data/raw
 ls data/raw
 
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
-mkdir processed
+mkdir data/processed
+cd data
 mkdir processed/server_logs processed/user_logs processed/event_logs
 
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
-cd data/raw
-cp *server* data/processed/server_logs
-cp *.log data/processed/server_logs
+cd ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/raw
+cp *server* ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/server_logs
+cp *.log ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/server_logs
 
 # 6. Repeat the above step for user logs and event logs
-cp *user* data/processed/user_logs
-cp *event* data/processed/event_logs
+cp *user* ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/user_logs
+cp *event* ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/processed/event_logs
 
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 rm *ipaddr* 
@@ -55,10 +56,8 @@ cd data/processed/user_logs
 rm *ipaddr*
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
-cd data
-touch inventory.txt
+cd ~/Desktop/dsi3/shell/02_activities/assignments/newproject/data/
 ls processed > invtentory.txt
-ls
 
 ###########################################
 
